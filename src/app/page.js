@@ -133,7 +133,7 @@ export default function Home() {
   <button
     className="btn"
     style={{
-      backgroundColor: '#f7c948', // yellow-ish
+      backgroundColor: '#f7c948', 
       borderRadius: 0,
       padding: '0 28px',
       fontWeight: '500',
@@ -169,50 +169,59 @@ export default function Home() {
 
       
       <section className="bg-light py-5">
-        <div className="container text-center">
-          <h2 className="text-primary">Latest Jobs</h2>
-          <div className="row justify-content-center mt-4">
-            {["warning", "primary", "danger"].map((color, index) => (
-              <div key={index} className={`col-md-3 p-4 text-white bg-${color} rounded mx-2`}>
-                <div className="d-flex align-items-start mb-3">
-                  <span className="badge bg-white text-primary" style={{ padding: "5px 10px", fontSize: "14px", display: "flex", alignItems: "center" }}>
-                    <img src="/python.jpg" alt="Python Logo" style={{ width: "20px", marginRight: "5px" }} />
-                    Python
-                  </span>
-                </div>
-                <h3 className="fw-bold">Software Engineer</h3>
-                <p>📍 London</p>
-                <p>💰 £65,000</p>
-                <p className="text-start" style={{ whiteSpace: "normal", wordBreak: "break-word" }}>
-                  Odio mi amet commodo convallis nunc. Tincidunt mauris eu egestas eget in aliquam.
-                </p>
-                <button className="btn btn-light text-dark mt-1" style={{ width: "220px", padding: "12px", borderRadius: "25px", fontWeight: "bold" }}>
-                  View this job
-                </button>
-                <p className="text-start mt-2" style={{ whiteSpace: "normal", wordBreak: "break-word" }}>
-                  Posted on 29/08/2023
-                </p>
-              </div>
-            ))}
+  <div className="container text-center">
+    <h2 className="text-primary">Latest Jobs</h2>
+    <div className="row justify-content-center mt-4">
+      {["warning", "primary", "danger"].map((color, index) => (
+        <div key={index} className={`col-md-3 p-4 text-white bg-${color} rounded-3 mx-2`} style={{ borderRadius: '20px' }}>
+          <div className="d-flex align-items-start mb-3">
+            <span className="badge bg-white text-primary" style={{ padding: "5px 10px", fontSize: "14px", display: "flex", alignItems: "center" }}>
+              <img src="/python.jpg" alt="Python Logo" style={{ width: "20px", marginRight: "5px" }} />
+              Python
+            </span>
           </div>
-
-         
-          <div className="mt-4 d-flex justify-content-start gap-3">
-            <button
-              className="btn btn-outline-primary rounded-circle border-2 shadow-sm d-flex align-items-center justify-content-center"
-              style={{ width: '55px', height: '55px', fontSize: '24px' }}
-            >
-              ←
-            </button>
-            <button
-              className="btn btn-outline-primary rounded-circle border-2 shadow-sm d-flex align-items-center justify-content-center"
-              style={{ width: '55px', height: '55px', fontSize: '24px' }}
-            >
-              →
-            </button>
-          </div>
+          <h3 className="fw-bold">Software Engineer</h3>
+          <p>📍 London</p>
+          <p>💰 £65,000</p>
+          <p className="text-start" style={{ whiteSpace: "normal", wordBreak: "break-word" }}>
+            Odio mi amet commodo convallis nunc. Tincidunt mauris eu egestas eget in aliquam.
+          </p>
+          <button className="btn btn-light text-dark mt-1" style={{ width: "220px", padding: "12px", borderRadius: "25px", fontWeight: "bold" }}>
+            View this job
+          </button>
+          <p className="text-start mt-2" style={{ whiteSpace: "normal", wordBreak: "break-word" }}>
+            Posted on 29/08/2023
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+ 
+
+    
+    <div className="mt-4 d-flex justify-content-between align-items-center">
+      <div className="d-flex gap-3">
+        <button
+          className="btn btn-outline-primary rounded-circle border-2 shadow-sm d-flex align-items-center justify-content-center"
+          style={{ width: '55px', height: '55px', fontSize: '24px' }}
+        >
+          ←
+        </button>
+        <button
+          className="btn btn-outline-primary rounded-circle border-2 shadow-sm d-flex align-items-center justify-content-center"
+          style={{ width: '55px', height: '55px', fontSize: '24px' }}
+        >
+          →
+        </button>
+      </div>
+
+     
+      <h5 className="text-primary mb-0" style={{ marginRight: '150px', fontSize: '14px' }}>
+  View more jobs
+</h5>
+
+    </div>
+  </div>
+</section>
 
     
       <footer className="bg-primary text-white py-4">
