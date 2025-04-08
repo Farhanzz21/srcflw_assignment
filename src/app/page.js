@@ -34,7 +34,7 @@ export default function Home() {
 
           <div className="dropdown mx-3">
             <button className="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Services 🛠️
+              Services 
             </button>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href="#">Resume Review</a></li>
